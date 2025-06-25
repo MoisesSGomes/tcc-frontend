@@ -5,6 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules'
 import api from '../../services/api'
 
 function Slider() {
+  const BASE_URL = "https://letsgoparty-api.onrender.com"
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -54,7 +55,7 @@ function Slider() {
             <LinkEvento href={`/evento?id=${item.id}`}>
               <SliderContainer>
                 <SwiperDiv1>
-                  <ImgItem src={item.image} alt={item.titleEvent} />
+                  <ImgItem src={`${BASE_URL}${item.image}`} alt={item.titleEvent} />
                 </SwiperDiv1>
                 <SwiperDiv2>
                   <h3>{item.titleEvent}</h3>

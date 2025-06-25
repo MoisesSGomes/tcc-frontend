@@ -21,7 +21,7 @@ function Header() {
         const fetchUserData = async () => {
             if (token) {
                 try {
-                    const response = await fetch('http://localhost:3000/carregar-imagem-perfil', {
+                    const response = await fetch('https://letsgoparty-api.onrender.com/carregar-imagem-perfil', {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -85,7 +85,7 @@ function Header() {
             
             if (userData.image.path.startsWith('http')) return userData.image.path;
             
-            return `http://localhost:3000${userData.image.path}`;
+            return `https://letsgoparty-api.onrender.com${userData.image.path}`;
         }
         
         
