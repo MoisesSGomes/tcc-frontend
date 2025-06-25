@@ -109,7 +109,7 @@ function PerfilEdit() {
                             ? userData.image
                             : userData.image.path?.startsWith('http')
                                 ? userData.image.path
-                                : `http://localhost:3000${userData.image.path}`;
+                                : `https://letsgoparty-api.onrender.com${userData.image.path}`;
                         
                         setCurrentImage(imageSrc);
                     }

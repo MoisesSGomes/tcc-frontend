@@ -93,7 +93,7 @@ function ShowEvent() {
         <Container>
             <DivImagem>
                 {event.image && (
-                    <Imagem src={`http://localhost:3000${event.image.path}`} alt={event.title} />
+                    <Imagem src={`https://letsgoparty-api.onrender.com${event.image.path}`} alt={event.title} />
                 )}
                 <DivLike>
                     <LikeButton onClick={handleLikeClick} $liked={liked}>

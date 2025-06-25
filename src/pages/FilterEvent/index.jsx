@@ -43,7 +43,7 @@ function FilterEvent() {
                             <div>
                                 <div>
                                     <ImgItem
-                                        src={`http://localhost:3000${item.image.path}`}
+                                        src={`https://letsgoparty-api.onrender.com${item.image.path}`}
                                         alt='Imagem Evento'
                                     />
                                 </div>

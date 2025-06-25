@@ -42,7 +42,7 @@ function DateFilter() {
                     allEvents.map((item) => (
                         <DivGrid key={item.id}>
                             <LinkEvento href={`/evento?id=${item.id}`}>
-                                <ImgItem src={`http://localhost:3000${item.image.path}`} alt='Imagem Evento' />
+                                <ImgItem src={`https://letsgoparty-api.onrender.com${item.image.path}`} alt='Imagem Evento' />
                                 <DivTitle><Title>{item.title}</Title></DivTitle>
                             </LinkEvento>
                         </DivGrid>

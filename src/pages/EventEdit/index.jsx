@@ -129,7 +129,7 @@ function EventEdit() {
 
                 // Set image preview
                 if (eventData.image && eventData.image.path) {
-                    const backendBaseURL = "http://localhost:3000"; // coloque o endereço real do seu backend
+                    const backendBaseURL = "https://letsgoparty-api.onrender.com"; // coloque o endereço real do seu backend
                     setImagePreview(`${backendBaseURL}${eventData.image.path}`);
                 }
 
